@@ -43,8 +43,12 @@ public class Arithmetic {
 
 			}
 			System.out.println("Factorial of the Number is : " + fact);
+				
+		       System.out.println("Done");
 
 			break;
+				
+	   
 
 		default:
 			System.out.println("Try Again");
