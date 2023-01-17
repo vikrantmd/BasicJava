@@ -1,0 +1,30 @@
+public List<String> mapvaltolist(Map<String , Integer>map){
+
+Collection<Integer> val = map.values();
+
+ArrayList<Integer> al = new arrayList<>(values);
+
+return al;
+
+}
+
+-----------------------------------------------------------------
+package com.company.methodRef;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class MapToList {
+    public static void main(String[] args) {
+
+        Map<Integer, String> hm = new HashMap<>();
+        hm.put(0, "Vikrant");
+        hm.put(1, "Akshay");
+        hm.put(2, "Akash");
+        hm.put(3, "Yash");
+
+        List listtoMap = hm.values().stream().collect(Collectors.toCollection(ArrayList::new));
+
+        System.out.println(listtoMap);
+    }
+}
